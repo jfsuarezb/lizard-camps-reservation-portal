@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lizard Camps Reservation Portal</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <div id="titleAndInstructions">
+      <img
+        src="https://cdn.glitch.com/19c5b86f-f138-4725-9798-735d0a808632%2Flizardcamps_CEIF.png?v=1579054693658"
+        id="lizardCampsLogo"
+      />
+      <h1 id="title">
+        Haz Tu Reserva Aquí!
+      </h1>
+      <p1 id="instructions">Por favor llenar los datos siguientes...</p1>
+    </div>
+    <div id="formDiv">
+      <form id="form">
+        Nombre:
+        <input type="text" id="nombre" />
+        Apellido:
+        <input type="text" id="apellido" />
+        Fecha:
+        <input type="number" max="31" min="1" id="dia" />
+        <select id="mes">
+          <option value="sinValor"></option>
+          <option value="Enero">Enero</option>
+          <option value="Febrero">Febrero</option>
+          <option value="Marzo">Marzo</option>
+          <option value="Abril">Abril</option>
+          <option value="Mayo">Mayo</option>
+          <option value="Junio">Junio</option>
+          <option value="Julio">Julio</option>
+          <option value="Agosto">Agosto</option>
+          <option value="Septiembre">Septiembre</option>
+          <option value="Octubre">Octubre</option>
+          <option value="Noviembre">Noviembre</option>
+          <option value="Diciembre">Diciembre</option>
+        </select>
+        <input type="number" max="2021" min="2020" id="ano" />
+        <p>
+          Número de Integrantes:
+        </p>
+        <input type="number" max="20" min="1" id="numeroDeIntegrantes" />
+        <p>
+          Actividad:
+        </p>
+        <select id="actividad">
+          <option value="sinValor"></option>
+          <option value="fogatas">Fogatas</option>
+          <option value="caminataEcologica">Caminata Ecológica</option>
+          <option value="kayak">Kayak</option>
+          <option value="vinoEnLasEstrellas">Vino en las Estrellas</option>
+          <option value="escalar">Escalar</option>
+        </select>
+        <div id="buttonHolder">
+          <button type="button" id="boton">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="imagen">
+      <img
+        src="https://cdn.glitch.com/19c5b86f-f138-4725-9798-735d0a808632%2Fpanoramica-playa-coral.jpg?v=1579063110793"
+        id="imagenPlaya"
+      />
+    </div>
+  </body>
+</html>
